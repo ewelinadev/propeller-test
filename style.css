@@ -1,0 +1,611 @@
+@font-face {
+  font-family: 'Calluna';
+  src: url("fonts/calluna_regular_macroman/Calluna-Regular-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/calluna_regular_macroman/Calluna-Regular-webfont.eot") format("embedded-opentype"), url("fonts/calluna_regular_macroman/Calluna-Regular-webfont.woff") format("woff"), url("fonts/calluna_regular_macroman/Calluna-Regular-webfont.ttf") format("truetype"), url("fonts/calluna_regular_macroman/Calluna-Regular-webfont.svg") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: 'Montserrat';
+  src: url("fonts/montserrat/Montserrat-SemiBold.otf");
+  font-weight: bold; }
+@font-face {
+  font-family: 'MontserratRg';
+  src: url("fonts/montserrat/Montserrat-Light.otf"); }
+* {
+  box-sizing: border-box; }
+
+html {
+  height: auto;
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  height: auto;
+  background: url(images/backround-top.jpg) no-repeat top, url(images/background-bottom.jpg) no-repeat bottom, #000000;
+  margin: 0px;
+  padding: 0px; }
+
+a {
+  text-decoration: none;
+  color: #ffffff; }
+  a:visited, a:hover, a:active {
+    text-decoration: none; }
+
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase;
+  font-family: "Montserrat"; }
+
+header {
+  margin-right: auto;
+  margin-left: auto;
+  height: auto;
+  width: 100%;
+  text-align: center; }
+  @media only screen and (min-width: 768px) {
+    header {
+      height: auto;
+      width: 100%; } }
+  @media only screen and (min-width: 1280px) {
+    header {
+      height: 790px;
+      width: 1240px; } }
+  header .mobile-menu {
+    display: block;
+    width: 100%;
+    color: #ffffff;
+    position: fixed;
+    top: 0px;
+    z-index: 50;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom: 2px solid #ffffff;
+    height: 60px;
+    text-align: right; }
+    header .mobile-menu span {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 5px;
+      width: auto;
+      font-size: 30px;
+      margin: 10px; }
+      header .mobile-menu span:hover {
+        background-color: rgba(0, 0, 0, 0.9);
+        color: #ddd; }
+    @media only screen and (min-width: 768px) {
+      header .mobile-menu {
+        display: none; } }
+  header #logo {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto; }
+    @media only screen and (min-width: 768px) {
+      header #logo {
+        height: auto;
+        margin-bottom: 60px; } }
+    header #logo img {
+      margin-top: 140px;
+      width: 60%;
+      height: auto; }
+      @media only screen and (min-width: 550px) {
+        header #logo img {
+          width: 50%; } }
+      @media only screen and (min-width: 900px) {
+        header #logo img {
+          height: auto;
+          width: auto; } }
+  header .main-menu, header .main-menu-expanded {
+    display: none;
+    position: fixed;
+    top: 45px;
+    right: 0px;
+    width: 40%;
+    z-index: 50; }
+    header .main-menu ul, header .main-menu-expanded ul {
+      list-style: none;
+      padding-left: 0px;
+      padding-right: 0px;
+      height: auto; }
+      @media only screen and (min-width: 768px) {
+        header .main-menu ul, header .main-menu-expanded ul {
+          list-style: none;
+          padding-left: 0px;
+          padding-right: 0px;
+          display: inline-block; } }
+      header .main-menu ul li, header .main-menu-expanded ul li {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-bottom: 1px solid #ffffff;
+        border-left: 1px solid #ffffff;
+        text-transform: uppercase;
+        font-size: 18px;
+        display: block;
+        color: #ffffff;
+        width: 100%;
+        font-family: "MontserratRg";
+        letter-spacing: 2px;
+        height: auto;
+        padding: 20px; }
+        @media only screen and (min-width: 768px) {
+          header .main-menu ul li, header .main-menu-expanded ul li {
+            text-transform: uppercase;
+            font-size: 18px;
+            display: inline;
+            color: #ffffff;
+            float: left;
+            width: 16.66%;
+            font-family: "MontserratRg";
+            letter-spacing: 2px;
+            background-color: transparent;
+            border-bottom: 0px;
+            border-left: 0px;
+            padding: 0px; } }
+    @media only screen and (min-width: 768px) {
+      header .main-menu, header .main-menu-expanded {
+        border-top: 2px solid #ffffff;
+        border-bottom: 2px solid #ffffff;
+        height: 60px;
+        display: inline-block;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: 50; } }
+  header .main-menu-expanded {
+    display: block; }
+  header #social-links {
+    margin-top: 45px;
+    margin-bottom: 100px; }
+    header #social-links div {
+      margin-left: auto;
+      margin-right: auto;
+      padding: 10px; }
+      header #social-links div a:nth-child(1) {
+        float: left; }
+      header #social-links div a:nth-child(3) {
+        float: right; }
+
+main {
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (min-width: 768px) {
+    main {
+      width: 100%; } }
+  @media only screen and (min-width: 1280px) {
+    main {
+      width: 1240px; } }
+  main #content-region-1 article {
+    height: 315px;
+    max-height: auto;
+    background: #ffffff;
+    color: #000000;
+    padding: 40px 0px 40px 0px; }
+    main #content-region-1 article h1 {
+      font-family: "Montserrat";
+      font-size: 28px;
+      margin: 0 auto;
+      display: block;
+      text-transform: uppercase;
+      padding: 18px; }
+      @media only screen and (min-width: 768px) {
+        main #content-region-1 article h1 {
+          font-size: 36px; } }
+    main #content-region-1 article p {
+      font-family: "Calluna";
+      font-style: italic;
+      font-size: 16px;
+      margin: 0 auto;
+      padding: 10px;
+      display: block; }
+  main #content-region-1 #cta div.col-3 {
+    float: left; }
+    main #content-region-1 #cta div.col-3 img {
+      width: 100%;
+      display: block; }
+  main #content-region-1 #cta #table-booking {
+    position: relative;
+    text-align: center; }
+    main #content-region-1 #cta #table-booking #booking {
+      background: rgba(0, 0, 0, 0.7);
+      left: 0px;
+      position: absolute;
+      z-index: 5;
+      top: 0px;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      opacity: 0;
+      -webkit-transition: opacity 300ms linear;
+      transition: opacity 300ms linear; }
+      main #content-region-1 #cta #table-booking #booking h4 {
+        font-family: "Montserrat";
+        font-size: 18px;
+        display: block;
+        width: 80%;
+        position: absolute;
+        top: 5%;
+        left: 10%; }
+        @media only screen and (min-width: 550px) {
+          main #content-region-1 #cta #table-booking #booking h4 {
+            font-size: 20px; } }
+        @media only screen and (min-width: 768px) {
+          main #content-region-1 #cta #table-booking #booking h4 {
+            font-size: 18px; } }
+      main #content-region-1 #cta #table-booking #booking button {
+        font-family: "Calluna";
+        font-style: italic;
+        font-size: 16px;
+        border: 0px;
+        background-color: transparent;
+        color: #ffffff;
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        padding: 0px;
+        transform: translate(-50%); }
+        @media only screen and (min-width: 550px) {
+          main #content-region-1 #cta #table-booking #booking button {
+            font-size: 18px; } }
+        @media only screen and (min-width: 768px) {
+          main #content-region-1 #cta #table-booking #booking button {
+            font-size: 16px; } }
+      main #content-region-1 #cta #table-booking #booking img {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+        @media only screen and (min-width: 550px) {
+          main #content-region-1 #cta #table-booking #booking img {
+            width: 100px;
+            height: 100px; } }
+        @media only screen and (min-width: 768px) {
+          main #content-region-1 #cta #table-booking #booking img {
+            width: 60px;
+            height: 60px; } }
+    main #content-region-1 #cta #table-booking:hover #booking {
+      opacity: 1;
+      -webkit-transition: opacity 300ms linear;
+      transition: opacity 300ms linear; }
+@-webkit-keyframes animateright {
+  from {
+    right: -100%;
+    opacity: 0;
+    height: 100%; }
+  to {
+    right: 0;
+    opacity: 1;
+    height: 100%; } }
+@keyframes animateright {
+  from {
+    right: -100%;
+    opacity: 0;
+    height: 100%; }
+  to {
+    right: 0;
+    opacity: 1;
+    height: 100%; } }
+  main #content-region-1 #carousell {
+    width: 100%;
+    position: relative;
+    overflow: hidden; }
+    main #content-region-1 #carousell ul {
+      list-style: none;
+      display: block;
+      position: relative;
+      padding-left: 0px;
+      margin-top: 0px;
+      margin-bottom: 0px; }
+      main #content-region-1 #carousell ul li img {
+        display: block;
+        width: 100%;
+        height: auto; }
+    main #content-region-1 #carousell .slide {
+      width: 100%;
+      height: auto;
+      position: relative;
+      margin: 0px;
+      padding: 0px;
+      -webkit-animation: animateright 300ms;
+      animation: animateright 300ms; }
+    main #content-region-1 #carousell #indicator {
+      position: absolute;
+      bottom: 5px;
+      z-index: 20;
+      left: 33.33%;
+      right: 33.33%; }
+      @media only screen and (min-width: 1280px) {
+        main #content-region-1 #carousell #indicator {
+          left: 41.66%;
+          right: 41.66%; } }
+      main #content-region-1 #carousell #indicator ul {
+        list-style: none;
+        display: block;
+        margin-right: auto;
+        margin-left: auto; }
+        main #content-region-1 #carousell #indicator ul li {
+          width: 10px;
+          height: 10px;
+          background-color: #ffffff;
+          display: inline-block;
+          margin: 5px; }
+          main #content-region-1 #carousell #indicator ul li.active {
+            -ms-transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            -webkit-transition: transform 300ms linear;
+            transition: transform 300ms linear; }
+          main #content-region-1 #carousell #indicator ul li.pagination {
+            -ms-transform: initial;
+            -webkit-transform: initial;
+            transform: initial;
+            -webkit-transition: transform 300ms linear;
+            transition: transform 300ms linear; }
+  main #content-region-2 {
+    color: #ffffff;
+    height: auto;
+    border-bottom: 1px solid #ffffff; }
+    main #content-region-2 .row {
+      display: inline; }
+      main #content-region-2 .row > div.col-4 {
+        float: left;
+        display: block;
+        padding: 10px;
+        margin-top: 10px; }
+        main #content-region-2 .row > div.col-4 h2 {
+          width: 100%;
+          padding: 15px;
+          font-family: "MontserratRg";
+          font-size: 18px;
+          border-bottom: 1px solid #ffffff;
+          letter-spacing: 2px; }
+        main #content-region-2 .row > div.col-4 p {
+          font-family: "Calluna";
+          font-style: italic;
+          font-style: 18px;
+          margin-left: 45px;
+          margin-right: 45px;
+          line-height: 1.6; }
+          main #content-region-2 .row > div.col-4 p#twitter-post {
+            text-align: left;
+            font-size: 14px; }
+            main #content-region-2 .row > div.col-4 p#twitter-post span {
+              float: right; }
+        main #content-region-2 .row > div.col-4 button {
+          color: #ffffff;
+          background-color: transparent;
+          border: 1px solid #ffffff;
+          border-radius: 5px;
+          font-family: "MontserratRg";
+          font-size: 16px;
+          text-transform: uppercase;
+          width: 50%;
+          margin: 10px;
+          padding: 10px;
+          letter-spacing: 1px; }
+        main #content-region-2 .row > div.col-4 img {
+          width: 50%;
+          padding: 10px;
+          height: auto;
+          display: block;
+          float: left; }
+        main #content-region-2 .row > div.col-4 form .input-form {
+          height: auto;
+          width: 75%;
+          display: block;
+          position: relative;
+          margin: 10px auto 10px auto;
+          color: #ffffff;
+          text-align: left; }
+          @media only screen and (min-width: 768px) {
+            main #content-region-2 .row > div.col-4 form .input-form {
+              width: 85%; } }
+          @media only screen and (min-width: 900px) {
+            main #content-region-2 .row > div.col-4 form .input-form {
+              width: 75%; } }
+          main #content-region-2 .row > div.col-4 form .input-form label {
+            display: inline-block;
+            font-family: "Calluna";
+            font-style: italic;
+            font-style: 18px;
+            width: 35%;
+            float: left;
+            height: 40px;
+            padding: 10px 0px 10px 10px;
+            border: 1px solid #ffffff;
+            border-right: 0; }
+            @media only screen and (min-width: 768px) {
+              main #content-region-2 .row > div.col-4 form .input-form label {
+                width: 40%; } }
+            @media only screen and (min-width: 900px) {
+              main #content-region-2 .row > div.col-4 form .input-form label {
+                width: 35%; } }
+          main #content-region-2 .row > div.col-4 form .input-form label::before {
+            content: "|";
+            float: right;
+            width: 5%;
+            font-style: 18px;
+            font-style: normal;
+            display: inline-block; }
+          main #content-region-2 .row > div.col-4 form .input-form input {
+            font-family: "Calluna";
+            font-style: italic;
+            font-style: 18px;
+            height: 40px;
+            width: 60%;
+            background-color: transparent;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            border-left: 0;
+            display: inline-block;
+            float: left;
+            -webkit-box-shadow: 0 0 0 50px black inset;
+            -webkit-text-fill-color: #ffffff !important; }
+            @media only screen and (min-width: 768px) {
+              main #content-region-2 .row > div.col-4 form .input-form input {
+                width: 55%; } }
+            @media only screen and (min-width: 900px) {
+              main #content-region-2 .row > div.col-4 form .input-form input {
+                width: 60%; } }
+          main #content-region-2 .row > div.col-4 form .input-form textarea {
+            background-color: transparent;
+            -webkit-box-shadow: 0 0 0 50px black inset;
+            -webkit-text-fill-color: #ffffff !important; }
+          main #content-region-2 .row > div.col-4 form .input-form select {
+            background-color: transparent;
+            -webkit-box-shadow: 0 0 0 50px black inset;
+            -webkit-text-fill-color: #ffffff !important; }
+
+footer {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid #ffffff;
+  margin-top: 2px; }
+  @media only screen and (min-width: 1280px) {
+    footer {
+      width: 1240px; } }
+  footer ul {
+    list-style: none;
+    margin-right: auto;
+    margin-left: auto; }
+    footer ul li {
+      display: inline-block;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-family: "MontserratRg";
+      font-size: 16px;
+      color: #ffffff;
+      border-right: 1px solid #ffffff;
+      line-height: 1.2; }
+      footer ul li img {
+        display: inline-block; }
+      footer ul li:last-of-type {
+        border-right: 0px; }
+  footer #footer-logo {
+    margin-top: 35px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block; }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block; }
+
+/* For mobile phones: */
+/* For tablets: */
+.col-m-1 {
+  width: 8.33%; }
+
+.col-m-2 {
+  width: 16.66%; }
+
+.col-m-3 {
+  width: 25%; }
+
+.col-m-4 {
+  width: 33.33%; }
+
+.col-m-5 {
+  width: 41.66%; }
+
+.col-m-6 {
+  width: 50%; }
+
+.col-m-7 {
+  width: 58.33%; }
+
+.col-m-8 {
+  width: 66.66%; }
+
+.col-m-9 {
+  width: 75%; }
+
+.col-m-10 {
+  width: 83.33%; }
+
+.col-m-11 {
+  width: 91.66%; }
+
+.col-m-12 {
+  width: 100%; }
+
+@media only screen and (min-width: 768px) {
+  /* For  large tablets: */
+  .col-l-1 {
+    width: 8.33%; }
+
+  .col-l-2 {
+    width: 16.66%; }
+
+  .col-l-3 {
+    width: 25%; }
+
+  .col-l-4 {
+    width: 33.33%; }
+
+  .col-l-5 {
+    width: 41.66%; }
+
+  .col-l-6 {
+    width: 50%; }
+
+  .col-l-7 {
+    width: 58.33%; }
+
+  .col-l-8 {
+    width: 66.66%; }
+
+  .col-l-9 {
+    width: 75%; }
+
+  .col-l-10 {
+    width: 83.33%; }
+
+  .col-l-11 {
+    width: 91.66%; }
+
+  .col-l-12 {
+    width: 100%; } }
+@media only screen and (min-width: 1280px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%; }
+
+  .col-2 {
+    width: 16.66%; }
+
+  .col-3 {
+    width: 25%; }
+
+  .col-4 {
+    width: 33.33%; }
+
+  .col-5 {
+    width: 41.66%; }
+
+  .col-6 {
+    width: 50%; }
+
+  .col-7 {
+    width: 58.33%; }
+
+  .col-8 {
+    width: 66.66%; }
+
+  .col-9 {
+    width: 75%; }
+
+  .col-10 {
+    width: 83.33%; }
+
+  .col-11 {
+    width: 91.66%; }
+
+  .col-12 {
+    width: 100%; } }
+
+/*# sourceMappingURL=newstyle.css.map */
